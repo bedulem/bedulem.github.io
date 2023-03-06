@@ -1,0 +1,179 @@
+:root {
+    --bg-base: #F6F6F6;
+    --font-secundaria: #777775;
+    --acento: #F08124;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+/* HEADER */
+
+header {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+header nav {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    width: 100vw;
+
+}
+
+nav a {
+    width: 52%;
+    text-align: right;
+}
+
+.nav-redes {
+    width: 48%;
+}
+
+.nav-redes ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    padding-right: 30px;
+}
+
+.nav-redes i {
+    font-size: 1.3rem;
+}
+
+.nav-redes li,
+a {
+    text-decoration: none;
+    list-style: none;
+    color: var(--font-secundaria);
+}
+
+.nav-redes li a:hover {
+    color: var(--acento);
+}
+
+/*MAIN*/
+
+main {
+    background-color: var(--bg-base);
+    text-align: center;
+}
+
+main h3 {
+    font-size: 2rem;
+    font-weight: normal;
+    padding: 40px 0px;
+}
+
+
+/*FORMULARIO CONTACTO*/
+
+
+form {
+    width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    ;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    border: var(--font-secundaria) solid 1px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border: var(--acento) solid 1px;
+}
+
+input[type="submit"] {
+    background-color: var(--acento);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--font-secundaria);
+}
+
+.formErrores {
+    margin: 0px 0px 20px 20px;
+}
+
+#errores {
+    font-size: .75rem;
+    color: rgb(255, 0, 0);
+
+}
+
+
+/* FOOTER */
+
+footer {
+    height: 150px;
+    background-color: var(--font-secundaria);
+    color: var(--bg-base);
+    text-align: center;
+}
+
+.redes ul {
+    display: flex;
+    font-weight: lighter;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 0px;
+
+
+}
+
+.redes li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.redes i:hover {
+    color: var(--acento);
+    height: 1.8rem;
+}
+
+.redes i {
+    color: var(--bg-base);
+    font-size: 2rem;
+}
+
+.copyright {
+    margin: 8px;
+}
+
+.copyright p {
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin: 5px 0px;
+}
