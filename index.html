@@ -14,41 +14,41 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <h2>CV Belén Santochi</h2>
+    <header id="home">
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Experiencia</a></li>
-          <li><a href="#">Formación</a></li>
-          <li><a href="#">skills</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#academica">Formación</a></li>
+          <li><a href="#skills">skills</a></li>
+          <li><a href="./contact.html">Contacto</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="presentacion">
-        <div class="presentacion-img">
+        <div class="contenedor">
           <img
-            src="./img/foto-de-perfil-comprimida-cuadrada.jpg"
+            src="./img/foto-de-perfil-cuadrada-confondo-.png"
             alt="Foto de perfil"
           />
-        </div>
-        <div class="titular">
-          <h1>Desarrolladora Back-end</h1>
-          <p>NodeJS | Express | MongoDB | Java | MySQL | Git</p>
+          <div class="titular">
+            <h1>Belén Santochi</h1>
+            <h2>Desarrolladora Back-end</h2>
+            <p>NodeJS | Express | MongoDB | Java | MySQL | Git</p>
+          </div>
         </div>
       </section>
-      <section>
+      <section id="experiencia" class="experiencia">
         <h3>Experiencia Laboral</h3>
         <article>
-          <p>NFT Studios</p>
-          <p>Desarrolladora Back-end</p>
-          <p>Mayo 2022 - Noviembre 2022</p>
-          <p>
-            ntegrante del equipo Back-end encargado del desarrollo de una
+          <p class="puesto">Desarrolladora Back-end</p>
+          <p class="lugar">NFT Studios</p>
+          <p class="fecha">Mayo 2022 - Noviembre 2022</p>
+          <p class="descripcion">
+            Integrante del equipo Back-end encargado del desarrollo de una
             aplicación Web3.0 para la creación de colecciones de NFTs utilizando
-            arquitectura Hexagonal
+            arquitectura Hexagonal. Algunas de mis tareas fueron:
           </p>
           <ul>
             <li>Desarrollo de API REST CRUD mediante Express e Inversify</li>
@@ -59,13 +59,14 @@
           </ul>
         </article>
       </section>
-      <section>
+      <section id="academica" class="academica">
         <h3>Formación Académica</h3>
         <article>
           <h4>Carrera en curso</h4>
-          <p>Marzo 2023 - Diciembre 2023</p>
-          <p>Back-end Specialist - Digital House</p>
-          <p>Conocimientos a adquirir:</p>
+          <p class="puesto">Back-end Specialist</p>
+          <p class="lugar">Digital House</p>
+          <p class="fecha">Marzo 2023 - Diciembre 2023</p>
+          <p class="desarrollo">Conocimientos a adquirir:</p>
           <ul>
             <li>Gestión de producto digital</li>
             <li>Base de datos</li>
@@ -76,46 +77,81 @@
         <article>
           <h4>Carrera universitaria</h4>
           <div>
-            <p>2018 - 2021</p>
-            <p>UTN - Facultad Regional Córdoba</p>
-            <p>Título: Técnicatura universitaria en Mecatrónica</p>
+            <p class="puesto">Técnicatura universitaria en Mecatrónica</p>
+            <p class="lugar">UTN - Facultad Regional Córdoba</p>
+            <p class="fecha">2018 - 2021</p>
           </div>
           <div>
-            <p>2009 - 2015</p>
-            <p>UNC - Facultad de Arquitectura Urbanismo y Diseño</p>
-            <p>Título: Diseñadora Industrial</p>
+            <p class="puesto">Diseñadora Industrial</p>
+            <p class="lugar">
+              UNC - Facultad de Arquitectura Urbanismo y Diseño
+            </p>
+            <p class="fecha">2009 - 2015</p>
           </div>
         </article>
       </section>
-      <section>
+      <section id="skills" class="skills">
         <h3>Skills</h3>
         <article>
-          <ul>
-            <li>ModeJS</li>
-            <li>Express</li>
-            <li>TypeScript</li>
-            <li>MongoDB</li>
-            <li>JAVA</li>
-            <li>Spring Boot</li>
-            <li>MySQL</li>
-            <li>Git</li>
-          </ul>
-        </article>
-        <article>
-          <h3>herramientas</h3>
-          <ul>
-            <li>Visual Studio Code</li>
-            <li>GitHub/ GitLab</li>
-            <li>MongoDB Compass</li>
-            <li>MySQL Worckbench</li>
-            <li>IntelliJ</li>
-            <li>Postman</li>
-            <li>Jira</li>
-            <li>Figma</li>
+          <ul class="grid">
+            <li>
+              <img src="./img/nodejs-logo.svg" alt="logo node" />
+            </li>
+            <li>
+              <img src="./img/expressjs-logo.svg" alt=" logo express" />
+            </li>
+            <li>
+              <img src="./img/typescriptlang-logo.svg" alt="logo typeScript" />
+            </li>
+
+            <li>
+              <img src="./img/mongoDB-logo.svg" alt="logo mongoDB" />
+            </li>
+            <li>
+              <img src="./img/java-logo.svg" alt="logo java" />
+            </li>
+            <li>
+              <img src="./img/springio-logo.svg" alt="logo spring" />
+            </li>
+            <li>
+              <img src="./img/mysql-logo.svg" alt="logo mysql" />
+            </li>
+            <li>
+              <img src="./img/git-logo.svg" alt="logo git" />
+            </li>
           </ul>
         </article>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="redes">
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/belénsantochi/">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/bedulem">
+              <i class="fa-brands fa-square-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="./contact.html">
+              <i class="fa-solid fa-square-envelope"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <p>Belén Santochi</p>
+        <p>Desarrolladora Back-end</p>
+        <p>Copyright © 2023</p>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/c6f44d5caf.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
